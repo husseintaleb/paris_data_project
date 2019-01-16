@@ -1,1 +1,3 @@
 print("coucou")
+
+import requests
