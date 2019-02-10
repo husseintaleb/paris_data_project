@@ -1,0 +1,2581 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_3da2f386531641dc9f40c142ed5d50d4 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_3da2f386531641dc9f40c142ed5d50d4" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_3da2f386531641dc9f40c142ed5d50d4 = L.map(
+        'map_3da2f386531641dc9f40c142ed5d50d4', {
+        center: [48.864716, 2.349014],
+        zoom: 13,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_50741b72fc0147a990eb355f644b436c = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+    
+            var circle_marker_40f369c5f2a441699b0b888c6c66daf0 = L.circleMarker(
+                [48.8569864146, 2.28217321814],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_db133ad42a9047079596c4a951985bf1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_514f42c1a093466a91d079519ca0c9f6 = $(`<div id="html_514f42c1a093466a91d079519ca0c9f6" style="width: 100.0%; height: 100.0%;">Chernoviz - Raynouard  : 2 bike(s) available</div>`)[0];
+                popup_db133ad42a9047079596c4a951985bf1.setContent(html_514f42c1a093466a91d079519ca0c9f6);
+            
+
+            circle_marker_40f369c5f2a441699b0b888c6c66daf0.bindPopup(popup_db133ad42a9047079596c4a951985bf1)
+            ;
+
+            
+        
+    
+            var circle_marker_c364001527a5420580e801743cf3f7eb = L.circleMarker(
+                [48.8778514435, 2.33967013657],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_60269b70329e4017a3cc6a4de3d55cf5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1e6d9efbb8c34dd59ab2eae1cf4fe7e2 = $(`<div id="html_1e6d9efbb8c34dd59ab2eae1cf4fe7e2" style="width: 100.0%; height: 100.0%;">Choron - Martyrs  : 3 bike(s) available</div>`)[0];
+                popup_60269b70329e4017a3cc6a4de3d55cf5.setContent(html_1e6d9efbb8c34dd59ab2eae1cf4fe7e2);
+            
+
+            circle_marker_c364001527a5420580e801743cf3f7eb.bindPopup(popup_60269b70329e4017a3cc6a4de3d55cf5)
+            ;
+
+            
+        
+    
+            var circle_marker_5f49863f2aa5495e82a06f2a55ab2d20 = L.circleMarker(
+                [48.8296843301, 2.27534258685],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 25,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_c5b8398063da442f9c7f7201053b6a3d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e6e474c86ffc4fffade8f9f90aa24b2e = $(`<div id="html_e6e474c86ffc4fffade8f9f90aa24b2e" style="width: 100.0%; height: 100.0%;">Colonel Pierre Avia  : 10 bike(s) available</div>`)[0];
+                popup_c5b8398063da442f9c7f7201053b6a3d.setContent(html_e6e474c86ffc4fffade8f9f90aa24b2e);
+            
+
+            circle_marker_5f49863f2aa5495e82a06f2a55ab2d20.bindPopup(popup_c5b8398063da442f9c7f7201053b6a3d)
+            ;
+
+            
+        
+    
+            var circle_marker_a43218e94d704ecf9a4ce4a4aa59f188 = L.circleMarker(
+                [48.8846620656, 2.39020968745],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_bcd8a19d37df461686a858662291baa9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fd8f088ac37a462daabe02c1f281b405 = $(`<div id="html_fd8f088ac37a462daabe02c1f281b405" style="width: 100.0%; height: 100.0%;">Goubet - Darius Milhaud  : 0 bike(s) available</div>`)[0];
+                popup_bcd8a19d37df461686a858662291baa9.setContent(html_fd8f088ac37a462daabe02c1f281b405);
+            
+
+            circle_marker_a43218e94d704ecf9a4ce4a4aa59f188.bindPopup(popup_bcd8a19d37df461686a858662291baa9)
+            ;
+
+            
+        
+    
+            var circle_marker_3a19b52e75074ae3b0820671f2a770ea = L.circleMarker(
+                [48.820507, 2.351342],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_abcbad7e684c47b8aecdfb1659e6fbc7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d6692a2f0800477782df6ad3c6247ce3 = $(`<div id="html_d6692a2f0800477782df6ad3c6247ce3" style="width: 100.0%; height: 100.0%;">Gouthière - Poterne des Peupliers  : 3 bike(s) available</div>`)[0];
+                popup_abcbad7e684c47b8aecdfb1659e6fbc7.setContent(html_d6692a2f0800477782df6ad3c6247ce3);
+            
+
+            circle_marker_3a19b52e75074ae3b0820671f2a770ea.bindPopup(popup_abcbad7e684c47b8aecdfb1659e6fbc7)
+            ;
+
+            
+        
+    
+            var circle_marker_8610e08b41854f4db6c1399a02b7f64b = L.circleMarker(
+                [48.8542843799, 2.38476745784],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 31,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_1099938f9cb84795a0b261a2062ebc55 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2ca30bdefac24ad9abd7a6cba48947cd = $(`<div id="html_2ca30bdefac24ad9abd7a6cba48947cd" style="width: 100.0%; height: 100.0%;">Jules Vallès - Charonne  : 13 bike(s) available</div>`)[0];
+                popup_1099938f9cb84795a0b261a2062ebc55.setContent(html_2ca30bdefac24ad9abd7a6cba48947cd);
+            
+
+            circle_marker_8610e08b41854f4db6c1399a02b7f64b.bindPopup(popup_1099938f9cb84795a0b261a2062ebc55)
+            ;
+
+            
+        
+    
+            var circle_marker_1476051bd2c44a62a7ca496b0aed6648 = L.circleMarker(
+                [48.8732671376, 2.34075344805],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_df58cb6b7cbf400d9f12a51da392877b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c88124b9e14741bdaa644e03904325fd = $(`<div id="html_c88124b9e14741bdaa644e03904325fd" style="width: 100.0%; height: 100.0%;">Mairie du 9e  : 3 bike(s) available</div>`)[0];
+                popup_df58cb6b7cbf400d9f12a51da392877b.setContent(html_c88124b9e14741bdaa644e03904325fd);
+            
+
+            circle_marker_1476051bd2c44a62a7ca496b0aed6648.bindPopup(popup_df58cb6b7cbf400d9f12a51da392877b)
+            ;
+
+            
+        
+    
+            var circle_marker_3b216e386d2c47e3a63fe3571f1b476a = L.circleMarker(
+                [48.8361728601, 2.31939214392],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_5810940239d546fabc6c069a39f9147b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_988b5cb496534f97b2f7c89e6b621597 = $(`<div id="html_988b5cb496534f97b2f7c89e6b621597" style="width: 100.0%; height: 100.0%;">Ouest - Château  : 6 bike(s) available</div>`)[0];
+                popup_5810940239d546fabc6c069a39f9147b.setContent(html_988b5cb496534f97b2f7c89e6b621597);
+            
+
+            circle_marker_3b216e386d2c47e3a63fe3571f1b476a.bindPopup(popup_5810940239d546fabc6c069a39f9147b)
+            ;
+
+            
+        
+    
+            var circle_marker_cc031772908d49bf9fbbc870df91c97b = L.circleMarker(
+                [48.8867667, 2.326228],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_5254c4dd4cb940afbf37284d55744b1a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_33af2f6bbe20402ea62da19f05cb5763 = $(`<div id="html_33af2f6bbe20402ea62da19f05cb5763" style="width: 100.0%; height: 100.0%;">Pierre Ginier Clichy  : 2 bike(s) available</div>`)[0];
+                popup_5254c4dd4cb940afbf37284d55744b1a.setContent(html_33af2f6bbe20402ea62da19f05cb5763);
+            
+
+            circle_marker_cc031772908d49bf9fbbc870df91c97b.bindPopup(popup_5254c4dd4cb940afbf37284d55744b1a)
+            ;
+
+            
+        
+    
+            var circle_marker_edd19027f2f246de885fb0ce73557095 = L.circleMarker(
+                [48.8504580092, 2.35245427549],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_f001612a52d44a9b8013c7bc46f5410d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ab467c324c4a48029c2e69e6860c8e35 = $(`<div id="html_ab467c324c4a48029c2e69e6860c8e35" style="width: 100.0%; height: 100.0%;">Pontoise - La Tournelle  : 6 bike(s) available</div>`)[0];
+                popup_f001612a52d44a9b8013c7bc46f5410d.setContent(html_ab467c324c4a48029c2e69e6860c8e35);
+            
+
+            circle_marker_edd19027f2f246de885fb0ce73557095.bindPopup(popup_f001612a52d44a9b8013c7bc46f5410d)
+            ;
+
+            
+        
+    
+            var circle_marker_0844a8fe01d443b1adca6d0217d211fa = L.circleMarker(
+                [48.861720329, 2.27534656856],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_64db0b1694364ba0b2b12d94d48e197a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b964bff6b9d14b6d97aafdd5d586a92e = $(`<div id="html_b964bff6b9d14b6d97aafdd5d586a92e" style="width: 100.0%; height: 100.0%;">Siam - La Pompe  : 2 bike(s) available</div>`)[0];
+                popup_64db0b1694364ba0b2b12d94d48e197a.setContent(html_b964bff6b9d14b6d97aafdd5d586a92e);
+            
+
+            circle_marker_0844a8fe01d443b1adca6d0217d211fa.bindPopup(popup_64db0b1694364ba0b2b12d94d48e197a)
+            ;
+
+            
+        
+    
+            var circle_marker_ff21457028f04952b6f3bfd394011ee6 = L.circleMarker(
+                [48.8347683793, 2.28414229739],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 21,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_6f5e1bd1564d4764b98f356d3a2e76ed = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_eead48448ea84edbb8e4b0bbc41f6af7 = $(`<div id="html_eead48448ea84edbb8e4b0bbc41f6af7" style="width: 100.0%; height: 100.0%;">Square Desnouettes  : 8 bike(s) available</div>`)[0];
+                popup_6f5e1bd1564d4764b98f356d3a2e76ed.setContent(html_eead48448ea84edbb8e4b0bbc41f6af7);
+            
+
+            circle_marker_ff21457028f04952b6f3bfd394011ee6.bindPopup(popup_6f5e1bd1564d4764b98f356d3a2e76ed)
+            ;
+
+            
+        
+    
+            var circle_marker_c191899e83f642c2b695d0a713130122 = L.circleMarker(
+                [48.8701796, 2.3967273],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 27,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_207f7ad97c3a402f838c114360e5c881 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0b1a6190a6334cd9b0d10938ff4146b7 = $(`<div id="html_0b1a6190a6334cd9b0d10938ff4146b7" style="width: 100.0%; height: 100.0%;">Square des Saints-Simoniens  : 11 bike(s) available</div>`)[0];
+                popup_207f7ad97c3a402f838c114360e5c881.setContent(html_0b1a6190a6334cd9b0d10938ff4146b7);
+            
+
+            circle_marker_c191899e83f642c2b695d0a713130122.bindPopup(popup_207f7ad97c3a402f838c114360e5c881)
+            ;
+
+            
+        
+    
+            var circle_marker_e4bfe1b1741f414c9117b46db9bd03b5 = L.circleMarker(
+                [48.8507358241, 2.37587011171],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 59,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_f816e72506bb4fd4ab5e3d55321a7214 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8903e8b8e7c94c1e9dd60dcadf649716 = $(`<div id="html_8903e8b8e7c94c1e9dd60dcadf649716" style="width: 100.0%; height: 100.0%;">Traversière - Ledru-Rollin  : 27 bike(s) available</div>`)[0];
+                popup_f816e72506bb4fd4ab5e3d55321a7214.setContent(html_8903e8b8e7c94c1e9dd60dcadf649716);
+            
+
+            circle_marker_e4bfe1b1741f414c9117b46db9bd03b5.bindPopup(popup_f816e72506bb4fd4ab5e3d55321a7214)
+            ;
+
+            
+        
+    
+            var circle_marker_1c2ca196901648fcb03bde83fa01e006 = L.circleMarker(
+                [48.8668106533, 2.33438844825],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_f8c0e540a7b444b5b579607d4f95b5f2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3832c9bf148743889fa4c7b7c5dbc8d3 = $(`<div id="html_3832c9bf148743889fa4c7b7c5dbc8d3" style="width: 100.0%; height: 100.0%;">Ventadour - Opéra  : 5 bike(s) available</div>`)[0];
+                popup_f8c0e540a7b444b5b579607d4f95b5f2.setContent(html_3832c9bf148743889fa4c7b7c5dbc8d3);
+            
+
+            circle_marker_1c2ca196901648fcb03bde83fa01e006.bindPopup(popup_f8c0e540a7b444b5b579607d4f95b5f2)
+            ;
+
+            
+        
+    
+            var circle_marker_bf450f9dacf64c8a9c2b0215c35d461a = L.circleMarker(
+                [48.8817697939, 2.40317936797],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_2063721239314c6386b4c2fedd54bd57 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_56860b4e3bb74382b35dc38f3a419798 = $(`<div id="html_56860b4e3bb74382b35dc38f3a419798" style="width: 100.0%; height: 100.0%;">Alexander Fleming - Belvédère  : 2 bike(s) available</div>`)[0];
+                popup_2063721239314c6386b4c2fedd54bd57.setContent(html_56860b4e3bb74382b35dc38f3a419798);
+            
+
+            circle_marker_bf450f9dacf64c8a9c2b0215c35d461a.bindPopup(popup_2063721239314c6386b4c2fedd54bd57)
+            ;
+
+            
+        
+    
+            var circle_marker_2b1cc4073d6440d195a6f392bb8a9569 = L.circleMarker(
+                [48.8348484529, 2.36682649963],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_675172e144554a558cf6aaa82836c556 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9a6d036cf57841af9ea7503bb6e3de8b = $(`<div id="html_9a6d036cf57841af9ea7503bb6e3de8b" style="width: 100.0%; height: 100.0%;">Bruant-Vincent Auriol  : 9 bike(s) available</div>`)[0];
+                popup_675172e144554a558cf6aaa82836c556.setContent(html_9a6d036cf57841af9ea7503bb6e3de8b);
+            
+
+            circle_marker_2b1cc4073d6440d195a6f392bb8a9569.bindPopup(popup_675172e144554a558cf6aaa82836c556)
+            ;
+
+            
+        
+    
+            var circle_marker_42918a6a63784da99e18d5f7937664b8 = L.circleMarker(
+                [48.8338217729, 2.39469266411],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_a9aa1304bb8442c3a323408668c8cf77 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_200d46bdf04444f4a826029981643c5d = $(`<div id="html_200d46bdf04444f4a826029981643c5d" style="width: 100.0%; height: 100.0%;">Charenton - Jardiniers  : 3 bike(s) available</div>`)[0];
+                popup_a9aa1304bb8442c3a323408668c8cf77.setContent(html_200d46bdf04444f4a826029981643c5d);
+            
+
+            circle_marker_42918a6a63784da99e18d5f7937664b8.bindPopup(popup_a9aa1304bb8442c3a323408668c8cf77)
+            ;
+
+            
+        
+    
+            var circle_marker_fd1fedd74df8491a94448d992255528d = L.circleMarker(
+                [48.8417391612, 2.33155221674],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_d2914cdfda0b44248b3459f6727daa36 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_09e973b1cf554f7a90fabf1ebd0a826c = $(`<div id="html_09e973b1cf554f7a90fabf1ebd0a826c" style="width: 100.0%; height: 100.0%;">Chevreuse - Montparnasse  : 2 bike(s) available</div>`)[0];
+                popup_d2914cdfda0b44248b3459f6727daa36.setContent(html_09e973b1cf554f7a90fabf1ebd0a826c);
+            
+
+            circle_marker_fd1fedd74df8491a94448d992255528d.bindPopup(popup_d2914cdfda0b44248b3459f6727daa36)
+            ;
+
+            
+        
+    
+            var circle_marker_72bd1dbfd1984ca9a7ce1768d19be7ee = L.circleMarker(
+                [48.8265029331, 2.30927479983],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_dda2fd02cb394d17b521b5351c661fdf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8e22f01c179743a191c5a9ec200e0f1f = $(`<div id="html_8e22f01c179743a191c5a9ec200e0f1f" style="width: 100.0%; height: 100.0%;">Colonel Monteil - Brune  : 4 bike(s) available</div>`)[0];
+                popup_dda2fd02cb394d17b521b5351c661fdf.setContent(html_8e22f01c179743a191c5a9ec200e0f1f);
+            
+
+            circle_marker_72bd1dbfd1984ca9a7ce1768d19be7ee.bindPopup(popup_dda2fd02cb394d17b521b5351c661fdf)
+            ;
+
+            
+        
+    
+            var circle_marker_426d2afeab884a8d96c16b128cf58b3a = L.circleMarker(
+                [48.8708094287, 2.28114900769],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_ad231ab83e664abbbebc89d5404185cb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ec6216694d064eb2943795baeafe7616 = $(`<div id="html_ec6216694d064eb2943795baeafe7616" style="width: 100.0%; height: 100.0%;">Crevaux - Bugeaud  : 3 bike(s) available</div>`)[0];
+                popup_ad231ab83e664abbbebc89d5404185cb.setContent(html_ec6216694d064eb2943795baeafe7616);
+            
+
+            circle_marker_426d2afeab884a8d96c16b128cf58b3a.bindPopup(popup_ad231ab83e664abbbebc89d5404185cb)
+            ;
+
+            
+        
+    
+            var circle_marker_49c32e7c0d57457bb8f5858e362857a8 = L.circleMarker(
+                [48.8481913486, 2.34183165485],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 25,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_a4c8d0fd4eec44b6b2ec472f35e31efd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_da9e2ddcfad944a0b412d7901f044029 = $(`<div id="html_da9e2ddcfad944a0b412d7901f044029" style="width: 100.0%; height: 100.0%;">Cujas - Saint-Michel  : 10 bike(s) available</div>`)[0];
+                popup_a4c8d0fd4eec44b6b2ec472f35e31efd.setContent(html_da9e2ddcfad944a0b412d7901f044029);
+            
+
+            circle_marker_49c32e7c0d57457bb8f5858e362857a8.bindPopup(popup_a4c8d0fd4eec44b6b2ec472f35e31efd)
+            ;
+
+            
+        
+    
+            var circle_marker_aedf7530ee03450197bb60a10c7d9bdf = L.circleMarker(
+                [48.8971300531, 2.39607900821],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 21,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_1231f844448d454da1b5db3fa519ad07 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_41ecac6771704d4790a227e5f1953194 = $(`<div id="html_41ecac6771704d4790a227e5f1953194" style="width: 100.0%; height: 100.0%;">Grands Moulins de Pantin  : 8 bike(s) available</div>`)[0];
+                popup_1231f844448d454da1b5db3fa519ad07.setContent(html_41ecac6771704d4790a227e5f1953194);
+            
+
+            circle_marker_aedf7530ee03450197bb60a10c7d9bdf.bindPopup(popup_1231f844448d454da1b5db3fa519ad07)
+            ;
+
+            
+        
+    
+            var circle_marker_910c5928898e4ef4afe9e2a78ab0f4bf = L.circleMarker(
+                [48.8707743602, 2.34964963683],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_6f18522795e74bc1af4f22a557088fae = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a2b114ed4cef436ba98879e9ee4ab3bc = $(`<div id="html_a2b114ed4cef436ba98879e9ee4ab3bc" style="width: 100.0%; height: 100.0%;">Hauteville - Bonne Nouvelle  : 5 bike(s) available</div>`)[0];
+                popup_6f18522795e74bc1af4f22a557088fae.setContent(html_a2b114ed4cef436ba98879e9ee4ab3bc);
+            
+
+            circle_marker_910c5928898e4ef4afe9e2a78ab0f4bf.bindPopup(popup_6f18522795e74bc1af4f22a557088fae)
+            ;
+
+            
+        
+    
+            var circle_marker_fc142d4daa6d409ba5ab75240b772c1e = L.circleMarker(
+                [48.8773560577, 2.35451144564],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_eeca9eaca9c24b7a81ae165a17c64737 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dde83532a46f4ef3b827d84d894680b9 = $(`<div id="html_dde83532a46f4ef3b827d84d894680b9" style="width: 100.0%; height: 100.0%;">Marché Saint-Quentin  : 4 bike(s) available</div>`)[0];
+                popup_eeca9eaca9c24b7a81ae165a17c64737.setContent(html_dde83532a46f4ef3b827d84d894680b9);
+            
+
+            circle_marker_fc142d4daa6d409ba5ab75240b772c1e.bindPopup(popup_eeca9eaca9c24b7a81ae165a17c64737)
+            ;
+
+            
+        
+    
+            var circle_marker_a3a3a402902447c0a72ea5d411301c44 = L.circleMarker(
+                [48.832527084, 2.36235441039],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 27,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_1f1d398bb9844cc5afbe68362e441a04 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c8be2c4a90484eb298915c05a5507ca8 = $(`<div id="html_c8be2c4a90484eb298915c05a5507ca8" style="width: 100.0%; height: 100.0%;">Nationale-Vincent Auriol  : 11 bike(s) available</div>`)[0];
+                popup_1f1d398bb9844cc5afbe68362e441a04.setContent(html_c8be2c4a90484eb298915c05a5507ca8);
+            
+
+            circle_marker_a3a3a402902447c0a72ea5d411301c44.bindPopup(popup_1f1d398bb9844cc5afbe68362e441a04)
+            ;
+
+            
+        
+    
+            var circle_marker_913e5949edcd4e7da60ea30fb75303e4 = L.circleMarker(
+                [48.8811619836, 2.30951238051],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_9f5282de72f64594befcf86f88366bff = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2a7a83898ee14c33a764e9bb04af3918 = $(`<div id="html_2a7a83898ee14c33a764e9bb04af3918" style="width: 100.0%; height: 100.0%;">Parc Monceau  : 6 bike(s) available</div>`)[0];
+                popup_9f5282de72f64594befcf86f88366bff.setContent(html_2a7a83898ee14c33a764e9bb04af3918);
+            
+
+            circle_marker_913e5949edcd4e7da60ea30fb75303e4.bindPopup(popup_9f5282de72f64594befcf86f88366bff)
+            ;
+
+            
+        
+    
+            var circle_marker_717cb8318fc343cc9fc7bdb541b08f31 = L.circleMarker(
+                [48.8739721724, 2.3483887575],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_ad8d48c48148433c839e48e16c581319 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ea4e4e8ac7454e14894a28f787f2fd47 = $(`<div id="html_ea4e4e8ac7454e14894a28f787f2fd47" style="width: 100.0%; height: 100.0%;">Petites Ecuries - Faubourg Poissonnière  : 7 bike(s) available</div>`)[0];
+                popup_ad8d48c48148433c839e48e16c581319.setContent(html_ea4e4e8ac7454e14894a28f787f2fd47);
+            
+
+            circle_marker_717cb8318fc343cc9fc7bdb541b08f31.bindPopup(popup_ad8d48c48148433c839e48e16c581319)
+            ;
+
+            
+        
+    
+            var circle_marker_e03bd7eb90694721b1e70e7354d0cd51 = L.circleMarker(
+                [48.8653462694, 2.31019378796],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 41,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_e94f6645767b418ea2f7b2e1afdc4828 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8042f0263ffe4a9aa6d1469a0b61a8b1 = $(`<div id="html_8042f0263ffe4a9aa6d1469a0b61a8b1" style="width: 100.0%; height: 100.0%;">Place du Canada  : 18 bike(s) available</div>`)[0];
+                popup_e94f6645767b418ea2f7b2e1afdc4828.setContent(html_8042f0263ffe4a9aa6d1469a0b61a8b1);
+            
+
+            circle_marker_e03bd7eb90694721b1e70e7354d0cd51.bindPopup(popup_e94f6645767b418ea2f7b2e1afdc4828)
+            ;
+
+            
+        
+    
+            var circle_marker_a6587ab775d74c01b0f5a08fd1898b82 = L.circleMarker(
+                [48.872747269, 2.4082034543],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_b1959dc46a6c48a98d57728bc8081d7c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_245bbe7258664b7f9a0b418a8c4c82e6 = $(`<div id="html_245bbe7258664b7f9a0b418a8c4c82e6" style="width: 100.0%; height: 100.0%;">Saint-Fargeau - Mortier  : 3 bike(s) available</div>`)[0];
+                popup_b1959dc46a6c48a98d57728bc8081d7c.setContent(html_245bbe7258664b7f9a0b418a8c4c82e6);
+            
+
+            circle_marker_a6587ab775d74c01b0f5a08fd1898b82.bindPopup(popup_b1959dc46a6c48a98d57728bc8081d7c)
+            ;
+
+            
+        
+    
+            var circle_marker_c1aa88de6d204746a76aa41a27649c6f = L.circleMarker(
+                [48.8413205018, 2.30808901725],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 41,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_1b06068c3bd243b8a7d6154bd7248124 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_763f1a8836eb42919f7ac5b4df38dfde = $(`<div id="html_763f1a8836eb42919f7ac5b4df38dfde" style="width: 100.0%; height: 100.0%;">Volontaires-Vaugirard  : 18 bike(s) available</div>`)[0];
+                popup_1b06068c3bd243b8a7d6154bd7248124.setContent(html_763f1a8836eb42919f7ac5b4df38dfde);
+            
+
+            circle_marker_c1aa88de6d204746a76aa41a27649c6f.bindPopup(popup_1b06068c3bd243b8a7d6154bd7248124)
+            ;
+
+            
+        
+    
+            var circle_marker_32d2909e877644c8916ddb1f0efd5775 = L.circleMarker(
+                [48.8781137879, 2.32956021946],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_5c30ee7ea7324d4c94458add533b3bf1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ec1e48ab57e3477b9cab6e25373db518 = $(`<div id="html_ec1e48ab57e3477b9cab6e25373db518" style="width: 100.0%; height: 100.0%;">Athènes - Clichy  : 5 bike(s) available</div>`)[0];
+                popup_5c30ee7ea7324d4c94458add533b3bf1.setContent(html_ec1e48ab57e3477b9cab6e25373db518);
+            
+
+            circle_marker_32d2909e877644c8916ddb1f0efd5775.bindPopup(popup_5c30ee7ea7324d4c94458add533b3bf1)
+            ;
+
+            
+        
+    
+            var circle_marker_f59154142f0a4a51ad1735f052dba2d5 = L.circleMarker(
+                [48.8365662244, 2.3127071211],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_35c2af2a408b4dcf803f633d622f8d3e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dc3e620abfcb4874bf4355c60a0beb23 = $(`<div id="html_dc3e620abfcb4874bf4355c60a0beb23" style="width: 100.0%; height: 100.0%;">Duhamel - André Gide  : 2 bike(s) available</div>`)[0];
+                popup_35c2af2a408b4dcf803f633d622f8d3e.setContent(html_dc3e620abfcb4874bf4355c60a0beb23);
+            
+
+            circle_marker_f59154142f0a4a51ad1735f052dba2d5.bindPopup(popup_35c2af2a408b4dcf803f633d622f8d3e)
+            ;
+
+            
+        
+    
+            var circle_marker_975f098de4384ec3a08dfde17700cf1e = L.circleMarker(
+                [48.8714463539, 2.33829010585],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_a92c02481a5445b0864039053592dbde = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d975a6cdb8954136961bc3ac7669dd20 = $(`<div id="html_d975a6cdb8954136961bc3ac7669dd20" style="width: 100.0%; height: 100.0%;">Favart - Italiens  : 6 bike(s) available</div>`)[0];
+                popup_a92c02481a5445b0864039053592dbde.setContent(html_d975a6cdb8954136961bc3ac7669dd20);
+            
+
+            circle_marker_975f098de4384ec3a08dfde17700cf1e.bindPopup(popup_a92c02481a5445b0864039053592dbde)
+            ;
+
+            
+        
+    
+            var circle_marker_42c8a6f3e00d41b19f616112bd825461 = L.circleMarker(
+                [48.8674118657, 2.29078138011],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_04ad73b6437343c295330b536b9e5e19 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_000009ce69914e34a1bbdd515463ac9a = $(`<div id="html_000009ce69914e34a1bbdd515463ac9a" style="width: 100.0%; height: 100.0%;">Galilée - Kléber  : 5 bike(s) available</div>`)[0];
+                popup_04ad73b6437343c295330b536b9e5e19.setContent(html_000009ce69914e34a1bbdd515463ac9a);
+            
+
+            circle_marker_42c8a6f3e00d41b19f616112bd825461.bindPopup(popup_04ad73b6437343c295330b536b9e5e19)
+            ;
+
+            
+        
+    
+            var circle_marker_0375180220a646c2a74e68a0ac1a5d84 = L.circleMarker(
+                [48.8390782642, 2.35687734067],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_9318161fd5a84ce6b5ab8b25029b4678 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_52c14be85692492fb0a4c9f85e3658f9 = $(`<div id="html_52c14be85692492fb0a4c9f85e3658f9" style="width: 100.0%; height: 100.0%;">Geoffroy-Saint-Hilaire - Saint-Marcel  : 5 bike(s) available</div>`)[0];
+                popup_9318161fd5a84ce6b5ab8b25029b4678.setContent(html_52c14be85692492fb0a4c9f85e3658f9);
+            
+
+            circle_marker_0375180220a646c2a74e68a0ac1a5d84.bindPopup(popup_9318161fd5a84ce6b5ab8b25029b4678)
+            ;
+
+            
+        
+    
+            var circle_marker_7d5dfe7ca0f64af49ab82a05bf8f12a1 = L.circleMarker(
+                [48.8498691876, 2.26825738753],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_c3e3b8c4e4174fa787154f94c7c57d05 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c988af453b5e473b992bdec87a5c7afc = $(`<div id="html_c988af453b5e473b992bdec87a5c7afc" style="width: 100.0%; height: 100.0%;">George Sand-Jean De La Fontaine  : 9 bike(s) available</div>`)[0];
+                popup_c3e3b8c4e4174fa787154f94c7c57d05.setContent(html_c988af453b5e473b992bdec87a5c7afc);
+            
+
+            circle_marker_7d5dfe7ca0f64af49ab82a05bf8f12a1.bindPopup(popup_c3e3b8c4e4174fa787154f94c7c57d05)
+            ;
+
+            
+        
+    
+            var circle_marker_682846b5b4794c658f79d86c9f779c9c = L.circleMarker(
+                [48.8576156786, 2.33583135304],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 25,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_0d86ea11256341269e12708218b337e8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_98eb9aea500c4b74800d14218b630a48 = $(`<div id="html_98eb9aea500c4b74800d14218b630a48" style="width: 100.0%; height: 100.0%;">Institut de France  : 10 bike(s) available</div>`)[0];
+                popup_0d86ea11256341269e12708218b337e8.setContent(html_98eb9aea500c4b74800d14218b630a48);
+            
+
+            circle_marker_682846b5b4794c658f79d86c9f779c9c.bindPopup(popup_0d86ea11256341269e12708218b337e8)
+            ;
+
+            
+        
+    
+            var circle_marker_45d84757a8e74d0fa5fc33322855322b = L.circleMarker(
+                [48.8486563159, 2.29924407695],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_22572343c5434f76ac4bc5e3b1a1774a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_070ae4e94d414f7e9ae3c6925ce2f1a9 = $(`<div id="html_070ae4e94d414f7e9ae3c6925ce2f1a9" style="width: 100.0%; height: 100.0%;">La Motte-Picquet Grenelle  : 9 bike(s) available</div>`)[0];
+                popup_22572343c5434f76ac4bc5e3b1a1774a.setContent(html_070ae4e94d414f7e9ae3c6925ce2f1a9);
+            
+
+            circle_marker_45d84757a8e74d0fa5fc33322855322b.bindPopup(popup_22572343c5434f76ac4bc5e3b1a1774a)
+            ;
+
+            
+        
+    
+            var circle_marker_828cf981c332498f9b066b9ab46bc482 = L.circleMarker(
+                [48.8223409659, 2.3278616533],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_e946b5a5a815420dbe947bb41402f687 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_869d414fbd444958a14eb65ad24b69b2 = $(`<div id="html_869d414fbd444958a14eb65ad24b69b2" style="width: 100.0%; height: 100.0%;">Le Brix et Mesmin-Jourdan  : 4 bike(s) available</div>`)[0];
+                popup_e946b5a5a815420dbe947bb41402f687.setContent(html_869d414fbd444958a14eb65ad24b69b2);
+            
+
+            circle_marker_828cf981c332498f9b066b9ab46bc482.bindPopup(popup_e946b5a5a815420dbe947bb41402f687)
+            ;
+
+            
+        
+    
+            var circle_marker_f152a2d0b4b6481cbc9f2967147f4326 = L.circleMarker(
+                [48.8621619807, 2.41112578186],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_c280de20f31244818fdcd0a04215a08d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_772ab78ebdf245fa8dd351c37e5c9afe = $(`<div id="html_772ab78ebdf245fa8dd351c37e5c9afe" style="width: 100.0%; height: 100.0%;">Louis Lumière  : 2 bike(s) available</div>`)[0];
+                popup_c280de20f31244818fdcd0a04215a08d.setContent(html_772ab78ebdf245fa8dd351c37e5c9afe);
+            
+
+            circle_marker_f152a2d0b4b6481cbc9f2967147f4326.bindPopup(popup_c280de20f31244818fdcd0a04215a08d)
+            ;
+
+            
+        
+    
+            var circle_marker_cfbf874763fa4b79a2bfd5eb4f6d025d = L.circleMarker(
+                [48.8528612487, 2.26848357065],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_67704d596cc846f2a74e69c629ba8147 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_456c5afab1704b7c805cd2a46fc6a0ad = $(`<div id="html_456c5afab1704b7c805cd2a46fc6a0ad" style="width: 100.0%; height: 100.0%;">Mozart - Jasmin  : 9 bike(s) available</div>`)[0];
+                popup_67704d596cc846f2a74e69c629ba8147.setContent(html_456c5afab1704b7c805cd2a46fc6a0ad);
+            
+
+            circle_marker_cfbf874763fa4b79a2bfd5eb4f6d025d.bindPopup(popup_67704d596cc846f2a74e69c629ba8147)
+            ;
+
+            
+        
+    
+            var circle_marker_ad30f54c0c9d4f7f945e2d8d2090eaa6 = L.circleMarker(
+                [48.8578029171, 2.27750054694],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_9a4ba300058c4a2cb70cc973c55c0d1e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a82bb33d56344077bcd2b1687f1588c1 = $(`<div id="html_a82bb33d56344077bcd2b1687f1588c1" style="width: 100.0%; height: 100.0%;">Place de passy  : 2 bike(s) available</div>`)[0];
+                popup_9a4ba300058c4a2cb70cc973c55c0d1e.setContent(html_a82bb33d56344077bcd2b1687f1588c1);
+            
+
+            circle_marker_ad30f54c0c9d4f7f945e2d8d2090eaa6.bindPopup(popup_9a4ba300058c4a2cb70cc973c55c0d1e)
+            ;
+
+            
+        
+    
+            var circle_marker_78bbfbfcb5614124a28e788d7650666f = L.circleMarker(
+                [48.8779234119, 2.39598555362],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_587b2fd550c44a3b8e015cfe9b15aab4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a0a061a1d16c44d89689fcf3c1861106 = $(`<div id="html_a0a061a1d16c44d89689fcf3c1861106" style="width: 100.0%; height: 100.0%;">Pré Saint-Gervais - Lilas  : 2 bike(s) available</div>`)[0];
+                popup_587b2fd550c44a3b8e015cfe9b15aab4.setContent(html_a0a061a1d16c44d89689fcf3c1861106);
+            
+
+            circle_marker_78bbfbfcb5614124a28e788d7650666f.bindPopup(popup_587b2fd550c44a3b8e015cfe9b15aab4)
+            ;
+
+            
+        
+    
+            var circle_marker_281ce6e93bba4512b224b2b5f7266465 = L.circleMarker(
+                [48.8658042767, 2.36933707497],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 29,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_426b2fe008eb4fa3be3f2fb1a1edfdc5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5a1090cdb8d44b3a84d1267c78c0c92f = $(`<div id="html_5a1090cdb8d44b3a84d1267c78c0c92f" style="width: 100.0%; height: 100.0%;">Richard Lenoir - Jean-Pierre Timbaud  : 12 bike(s) available</div>`)[0];
+                popup_426b2fe008eb4fa3be3f2fb1a1edfdc5.setContent(html_5a1090cdb8d44b3a84d1267c78c0c92f);
+            
+
+            circle_marker_281ce6e93bba4512b224b2b5f7266465.bindPopup(popup_426b2fe008eb4fa3be3f2fb1a1edfdc5)
+            ;
+
+            
+        
+    
+            var circle_marker_4092065a3ff24f98ade1908d2a00c5e7 = L.circleMarker(
+                [48.858001906, 2.38179770265],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 21,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_0a670f40da284e57bc6f76ab4c23161f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_534aec0ab0c643e383d7126d2053c4b9 = $(`<div id="html_534aec0ab0c643e383d7126d2053c4b9" style="width: 100.0%; height: 100.0%;">Roquette - Auguste Laurent  : 8 bike(s) available</div>`)[0];
+                popup_0a670f40da284e57bc6f76ab4c23161f.setContent(html_534aec0ab0c643e383d7126d2053c4b9);
+            
+
+            circle_marker_4092065a3ff24f98ade1908d2a00c5e7.bindPopup(popup_0a670f40da284e57bc6f76ab4c23161f)
+            ;
+
+            
+        
+    
+            var circle_marker_3700e437bddb4119a93d90698c19d5f8 = L.circleMarker(
+                [48.8503104329, 2.3450158353],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_c35dd847e4074efe912344a746b36a51 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4083a2f427b44f6c8d5651e60778302c = $(`<div id="html_4083a2f427b44f6c8d5651e60778302c" style="width: 100.0%; height: 100.0%;">Sommerard - Saint-Jacques  : 7 bike(s) available</div>`)[0];
+                popup_c35dd847e4074efe912344a746b36a51.setContent(html_4083a2f427b44f6c8d5651e60778302c);
+            
+
+            circle_marker_3700e437bddb4119a93d90698c19d5f8.bindPopup(popup_c35dd847e4074efe912344a746b36a51)
+            ;
+
+            
+        
+    
+            var circle_marker_93ad172f3f7443e3a5855898f60d2189 = L.circleMarker(
+                [48.8681088869, 2.28147752242],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_58fe64499ceb4e0883d01416cd4b50bb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ad6f148afaf34b22bbc0ce2da876d3e6 = $(`<div id="html_ad6f148afaf34b22bbc0ce2da876d3e6" style="width: 100.0%; height: 100.0%;">Victor Hugo - La Pompe  : 5 bike(s) available</div>`)[0];
+                popup_58fe64499ceb4e0883d01416cd4b50bb.setContent(html_ad6f148afaf34b22bbc0ce2da876d3e6);
+            
+
+            circle_marker_93ad172f3f7443e3a5855898f60d2189.bindPopup(popup_58fe64499ceb4e0883d01416cd4b50bb)
+            ;
+
+            
+        
+    
+            var circle_marker_eeeafcf4065243e88b62bdaedb64c8d1 = L.circleMarker(
+                [48.8404004037, 2.3131178673],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_d6b90fa93d394322ba9376253ce1a527 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fb865ee513464a238343046c46c5db19 = $(`<div id="html_fb865ee513464a238343046c46c5db19" style="width: 100.0%; height: 100.0%;">Arsonval Falguière  : 5 bike(s) available</div>`)[0];
+                popup_d6b90fa93d394322ba9376253ce1a527.setContent(html_fb865ee513464a238343046c46c5db19);
+            
+
+            circle_marker_eeeafcf4065243e88b62bdaedb64c8d1.bindPopup(popup_d6b90fa93d394322ba9376253ce1a527)
+            ;
+
+            
+        
+    
+            var circle_marker_98b646a166a941f98c115ab0fd51a8ec = L.circleMarker(
+                [48.8437344688, 2.33342838188],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_32826e26522047b39ac219dd3be335bd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8b7295a368aa46dc946a8cf405199bbc = $(`<div id="html_8b7295a368aa46dc946a8cf405199bbc" style="width: 100.0%; height: 100.0%;">Assas - Luxembourg  : 2 bike(s) available</div>`)[0];
+                popup_32826e26522047b39ac219dd3be335bd.setContent(html_8b7295a368aa46dc946a8cf405199bbc);
+            
+
+            circle_marker_98b646a166a941f98c115ab0fd51a8ec.bindPopup(popup_32826e26522047b39ac219dd3be335bd)
+            ;
+
+            
+        
+    
+            var circle_marker_ff5f6646aa1345f39b1ec03935982608 = L.circleMarker(
+                [48.8492084999, 2.32851454623],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 21,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_90559d14735e4676ba0176009dd211be = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d648de969ae54fe19f6be1f7aed8d030 = $(`<div id="html_d648de969ae54fe19f6be1f7aed8d030" style="width: 100.0%; height: 100.0%;">Assas - Rennes  : 8 bike(s) available</div>`)[0];
+                popup_90559d14735e4676ba0176009dd211be.setContent(html_d648de969ae54fe19f6be1f7aed8d030);
+            
+
+            circle_marker_ff5f6646aa1345f39b1ec03935982608.bindPopup(popup_90559d14735e4676ba0176009dd211be)
+            ;
+
+            
+        
+    
+            var circle_marker_36004e10aa7c4fffa06e0df1c40a1a7f = L.circleMarker(
+                [48.8681445105, 2.29614960099],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_c1b91581d67d45fe964f59a09265ca68 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0ae469b2777e41c58e7c3ca51c51b63d = $(`<div id="html_0ae469b2777e41c58e7c3ca51c51b63d" style="width: 100.0%; height: 100.0%;">Bassano -  Iéna  : 2 bike(s) available</div>`)[0];
+                popup_c1b91581d67d45fe964f59a09265ca68.setContent(html_0ae469b2777e41c58e7c3ca51c51b63d);
+            
+
+            circle_marker_36004e10aa7c4fffa06e0df1c40a1a7f.bindPopup(popup_c1b91581d67d45fe964f59a09265ca68)
+            ;
+
+            
+        
+    
+            var circle_marker_ba90731610834ef9b0ae6a5e1eb2d94e = L.circleMarker(
+                [48.8755180686, 2.39296078728],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_e23887bc56a6492988f12c44cc0aa9a1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d21521f501ff4e0a806702ba2734851f = $(`<div id="html_d21521f501ff4e0a806702ba2734851f" style="width: 100.0%; height: 100.0%;">Belleville -  Pré Saint-Gervais  : 1 bike(s) available</div>`)[0];
+                popup_e23887bc56a6492988f12c44cc0aa9a1.setContent(html_d21521f501ff4e0a806702ba2734851f);
+            
+
+            circle_marker_ba90731610834ef9b0ae6a5e1eb2d94e.bindPopup(popup_e23887bc56a6492988f12c44cc0aa9a1)
+            ;
+
+            
+        
+    
+            var circle_marker_86cb498e319b42e0b1acc6bd98d582c9 = L.circleMarker(
+                [48.8584450543, 2.39039812239],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_78fb1d1ca9484260873fc1d6b12bcbb8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7f9820af76e34b48a913dbbce5cef359 = $(`<div id="html_7f9820af76e34b48a913dbbce5cef359" style="width: 100.0%; height: 100.0%;">Charonne - Pierre Bayle  : 4 bike(s) available</div>`)[0];
+                popup_78fb1d1ca9484260873fc1d6b12bcbb8.setContent(html_7f9820af76e34b48a913dbbce5cef359);
+            
+
+            circle_marker_86cb498e319b42e0b1acc6bd98d582c9.bindPopup(popup_78fb1d1ca9484260873fc1d6b12bcbb8)
+            ;
+
+            
+        
+    
+            var circle_marker_41fefa87906543628a017caf99cce783 = L.circleMarker(
+                [48.8687784918, 2.27435453918],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_e3743dd24fab4d2f973d0dc1392592eb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_686396463a05490ab20b4aff181741f6 = $(`<div id="html_686396463a05490ab20b4aff181741f6" style="width: 100.0%; height: 100.0%;">Flandrin - Longchamp  : 5 bike(s) available</div>`)[0];
+                popup_e3743dd24fab4d2f973d0dc1392592eb.setContent(html_686396463a05490ab20b4aff181741f6);
+            
+
+            circle_marker_41fefa87906543628a017caf99cce783.bindPopup(popup_e3743dd24fab4d2f973d0dc1392592eb)
+            ;
+
+            
+        
+    
+            var circle_marker_40943499cb404cc492cea85d08242766 = L.circleMarker(
+                [48.8809557416, 2.35243051484],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_7f7468df99a646d48da3b628a882d167 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7c56e9cea09d494c92f6ab310e8a1532 = $(`<div id="html_7c56e9cea09d494c92f6ab310e8a1532" style="width: 100.0%; height: 100.0%;">Gare du Nord - Saint-Vincent de Paul  : 9 bike(s) available</div>`)[0];
+                popup_7f7468df99a646d48da3b628a882d167.setContent(html_7c56e9cea09d494c92f6ab310e8a1532);
+            
+
+            circle_marker_40943499cb404cc492cea85d08242766.bindPopup(popup_7f7468df99a646d48da3b628a882d167)
+            ;
+
+            
+        
+    
+            var circle_marker_87d9da8d03744d258b1f44c7f3b47749 = L.circleMarker(
+                [48.8447302561, 2.34192394487],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_1d80c01462c448e187f03f1f15fc7389 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0b54b470361842d9a747f462f08134d0 = $(`<div id="html_0b54b470361842d9a747f462f08134d0" style="width: 100.0%; height: 100.0%;">Gay Lussac - Saint-Jacques  : 2 bike(s) available</div>`)[0];
+                popup_1d80c01462c448e187f03f1f15fc7389.setContent(html_0b54b470361842d9a747f462f08134d0);
+            
+
+            circle_marker_87d9da8d03744d258b1f44c7f3b47749.bindPopup(popup_1d80c01462c448e187f03f1f15fc7389)
+            ;
+
+            
+        
+    
+            var circle_marker_7c326d34d60c4dc2a8278d766c35330a = L.circleMarker(
+                [48.8793982645, 2.33370917334],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 21,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_79ae5366a1e543139449df034b05a826 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7858d414f2534828bfed19871a409786 = $(`<div id="html_7858d414f2534828bfed19871a409786" style="width: 100.0%; height: 100.0%;">Jean-Baptiste Pigalle - La Bruyere  : 8 bike(s) available</div>`)[0];
+                popup_79ae5366a1e543139449df034b05a826.setContent(html_7858d414f2534828bfed19871a409786);
+            
+
+            circle_marker_7c326d34d60c4dc2a8278d766c35330a.bindPopup(popup_79ae5366a1e543139449df034b05a826)
+            ;
+
+            
+        
+    
+            var circle_marker_3e833eb4c92a461fa848335fed5b209b = L.circleMarker(
+                [48.8691543609, 2.40932246879],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_7ed5f950c61043ab922e91a2071ef21b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_03b0098cbf8d410899e33b697807aed9 = $(`<div id="html_03b0098cbf8d410899e33b697807aed9" style="width: 100.0%; height: 100.0%;">Porte de Ménilmontant  : 7 bike(s) available</div>`)[0];
+                popup_7ed5f950c61043ab922e91a2071ef21b.setContent(html_03b0098cbf8d410899e33b697807aed9);
+            
+
+            circle_marker_3e833eb4c92a461fa848335fed5b209b.bindPopup(popup_7ed5f950c61043ab922e91a2071ef21b)
+            ;
+
+            
+        
+    
+            var circle_marker_ddefb65bb6d34e78b9b0de92517fcb16 = L.circleMarker(
+                [48.8579996433, 2.35021728098],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 39,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_04c33806f664483c80c7438b7a702f12 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_89399c344cac4644aabe373aee612e7d = $(`<div id="html_89399c344cac4644aabe373aee612e7d" style="width: 100.0%; height: 100.0%;">Saint-Bon - Rivoli  : 17 bike(s) available</div>`)[0];
+                popup_04c33806f664483c80c7438b7a702f12.setContent(html_89399c344cac4644aabe373aee612e7d);
+            
+
+            circle_marker_ddefb65bb6d34e78b9b0de92517fcb16.bindPopup(popup_04c33806f664483c80c7438b7a702f12)
+            ;
+
+            
+        
+    
+            var circle_marker_c4b013ecbbb346539a1f5fe29357f349 = L.circleMarker(
+                [48.8795052656, 2.33719063927],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_5217092ee9ee4a68ada9da29665e0a9b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f15a24bd30a24e3d95610bbe8f9bd7e3 = $(`<div id="html_f15a24bd30a24e3d95610bbe8f9bd7e3" style="width: 100.0%; height: 100.0%;">Toudouze - Clauzel  : 4 bike(s) available</div>`)[0];
+                popup_5217092ee9ee4a68ada9da29665e0a9b.setContent(html_f15a24bd30a24e3d95610bbe8f9bd7e3);
+            
+
+            circle_marker_c4b013ecbbb346539a1f5fe29357f349.bindPopup(popup_5217092ee9ee4a68ada9da29665e0a9b)
+            ;
+
+            
+        
+    
+            var circle_marker_123a6723741b477da1e6b5cbdda03822 = L.circleMarker(
+                [48.8402193381, 2.26383419115],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 45,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_e4f15213a2784f8da4c579d12273bae4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_16215a0a8e0745ed8561c74250688dd0 = $(`<div id="html_16215a0a8e0745ed8561c74250688dd0" style="width: 100.0%; height: 100.0%;">Versailles - Claude Terrasse  : 20 bike(s) available</div>`)[0];
+                popup_e4f15213a2784f8da4c579d12273bae4.setContent(html_16215a0a8e0745ed8561c74250688dd0);
+            
+
+            circle_marker_123a6723741b477da1e6b5cbdda03822.bindPopup(popup_e4f15213a2784f8da4c579d12273bae4)
+            ;
+
+            
+        
+    
+            var circle_marker_ee793d72f5ec4082b4b7ea37c7dd8512 = L.circleMarker(
+                [48.8474984177, 2.26848387135],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_d3b22fd854bb499a898760243c07128a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_13a7624c9ccd4aca904290960ccbdd9f = $(`<div id="html_13a7624c9ccd4aca904290960ccbdd9f" style="width: 100.0%; height: 100.0%;">Eglise d'Auteuil  : 3 bike(s) available</div>`)[0];
+                popup_d3b22fd854bb499a898760243c07128a.setContent(html_13a7624c9ccd4aca904290960ccbdd9f);
+            
+
+            circle_marker_ee793d72f5ec4082b4b7ea37c7dd8512.bindPopup(popup_d3b22fd854bb499a898760243c07128a)
+            ;
+
+            
+        
+    
+            var circle_marker_5211f187bf2f4e84b54b74fd7b471d87 = L.circleMarker(
+                [48.8863936794, 2.38654145444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 31,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_fcc7c018e9df4dcaaba513aeea1c45bd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_599986704c5b4dd4ac9cdd0d6e39edab = $(`<div id="html_599986704c5b4dd4ac9cdd0d6e39edab" style="width: 100.0%; height: 100.0%;">Hautpoul - Jean Jaurès  : 13 bike(s) available</div>`)[0];
+                popup_fcc7c018e9df4dcaaba513aeea1c45bd.setContent(html_599986704c5b4dd4ac9cdd0d6e39edab);
+            
+
+            circle_marker_5211f187bf2f4e84b54b74fd7b471d87.bindPopup(popup_fcc7c018e9df4dcaaba513aeea1c45bd)
+            ;
+
+            
+        
+    
+            var circle_marker_8b9ed44209eb4df6a7942440d9adf010 = L.circleMarker(
+                [48.8680343904, 2.41103061245],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_a1ef8887837e400585a471790444c8ae = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_21bc5cdbe2624a68b8fbbb642c3deb4f = $(`<div id="html_21bc5cdbe2624a68b8fbbb642c3deb4f" style="width: 100.0%; height: 100.0%;">Le Vau - Maurice Bertaux  : 7 bike(s) available</div>`)[0];
+                popup_a1ef8887837e400585a471790444c8ae.setContent(html_21bc5cdbe2624a68b8fbbb642c3deb4f);
+            
+
+            circle_marker_8b9ed44209eb4df6a7942440d9adf010.bindPopup(popup_a1ef8887837e400585a471790444c8ae)
+            ;
+
+            
+        
+    
+            var circle_marker_2e577bd9251a44a59dc732f8588f4290 = L.circleMarker(
+                [48.8601161096, 2.28084048191],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_3a7c9a5b669f428b9db3b80358daa552 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_92a5b0b8c0564635bf7d64ce35abcd99 = $(`<div id="html_92a5b0b8c0564635bf7d64ce35abcd99" style="width: 100.0%; height: 100.0%;">Paul Doumer - La Tour  : 4 bike(s) available</div>`)[0];
+                popup_3a7c9a5b669f428b9db3b80358daa552.setContent(html_92a5b0b8c0564635bf7d64ce35abcd99);
+            
+
+            circle_marker_2e577bd9251a44a59dc732f8588f4290.bindPopup(popup_3a7c9a5b669f428b9db3b80358daa552)
+            ;
+
+            
+        
+    
+            var circle_marker_0665773519be436b9d181f43aa19dd50 = L.circleMarker(
+                [48.8735687069, 2.28151252253],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffa500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffa500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_d6a29fe3822945e2b323c2d823656e73 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_967c2819b8db4a548b14d252984b52b3 = $(`<div id="html_967c2819b8db4a548b14d252984b52b3" style="width: 100.0%; height: 100.0%;">Pergolèse - Marbeau  : 3 bike(s) available</div>`)[0];
+                popup_d6a29fe3822945e2b323c2d823656e73.setContent(html_967c2819b8db4a548b14d252984b52b3);
+            
+
+            circle_marker_0665773519be436b9d181f43aa19dd50.bindPopup(popup_d6a29fe3822945e2b323c2d823656e73)
+            ;
+
+            
+        
+    
+            var circle_marker_066bb479166c43078764faec587aa2ea = L.circleMarker(
+                [48.8552968986, 2.33994730757],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#32cd32",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#32cd32",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_3da2f386531641dc9f40c142ed5d50d4);
+            
+    
+            var popup_0900cf565e364c6d810eb52cefc6b8e0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fcecba0cf675468bbf4f372a770f6da8 = $(`<div id="html_fcecba0cf675468bbf4f372a770f6da8" style="width: 100.0%; height: 100.0%;">Pont de Lodi - Dauphine  : 7 bike(s) available</div>`)[0];
+                popup_0900cf565e364c6d810eb52cefc6b8e0.setContent(html_fcecba0cf675468bbf4f372a770f6da8);
+            
+
+            circle_marker_066bb479166c43078764faec587aa2ea.bindPopup(popup_0900cf565e364c6d810eb52cefc6b8e0)
+            ;
+
+            
+        
+</script>
