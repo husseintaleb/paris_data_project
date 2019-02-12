@@ -2,7 +2,7 @@ import requests
 import json
 import time
 import folium
-
+import matplotlib.pyplot as plt
 #%% I - ECRITURE DE REQUETES GENERIQUES
 
 #liens vers les differents datasets
@@ -37,6 +37,7 @@ class Dataset():
             (sortby must be one of the items among self.fields)
             '''
             self.res1 = requests.get('https://opendata.paris.fr/api/records/1.0/search/?dataset=velib-disponibilite-en-temps-reel&rows={0}&sort={1}'.format(nrows,sortby)) #récupère les données chiffrées depuis parisdata
+          
             self.obj1 = json.loads(self.res1.text) #décode les données au format json
             
             if "error" in self.obj1:
@@ -76,6 +77,7 @@ arbres=Dataset(arbres_name)
 #%% Boucle de récupération de données 
 
 SLEEP_TIME = 60 # les requetes sont effectuees toutes les 60 secondes
+N_REQUESTS = 1440
 
 times = []     #liste vide qui va contenir les temps
 
@@ -85,7 +87,7 @@ for dico in base :
     station_id = dico['fields']['station_code']
     data[str(station_id)]=[]            #on cree un dictionnaire dont les cles sont les station_id et les valeurs sont des listes vides
 
-for i in range(1440):
+for i in range(N_REQUESTS):
     try:
         val = station.request(nrows=-1, sortby = 'duedate') #on effectue une requete regulierement dans le temps
     except BaseException as e:
@@ -110,6 +112,7 @@ for i in range(1440):
         
 emplacement_name = 'velib-emplacement-des-stations'
 emplacement = Dataset(emplacement_name)
+#locations = emplacement.request(-1)
 
 # On cree un dictionnaire dont les cles sont les stations ID et les valeurs sont les coordonnees GPS correspondantes
 idvsgps = {}
@@ -147,38 +150,64 @@ def bikes_anytime(hours,minutes) :
                             fill = True, 
                             fill_color = col).add_to(m)
     m.save('map.html')      #save map as html interactive page
-
-#def bikes_now():
-#     '''
-#    draws a map of the stations with circle markers whom size depends on the number of bikes available right now
-#    '''
-#    m = folium.Map(location = [48.864716, 2.349014], zoom_start=15)
-#    val = station.request(nrows=-1, sortby = 'duedate')
-#    for dico2 in val:
-#        numbikes = dico2['fields']['nbbike']
-#        if numbikes == 0 :      # the color of the marker shows how empty the station is
-#            col = '#ff0000'
-#        elif numbikes <= 10 :
-#            col = '#ffa500'
-#        else :
-#            col = '#32cd32'
-#        folium.CircleMarker(location = dico2['fields']['geo'], 
-#                            radius = 5 + 2*numbikes, #radisu proportional to the number of bikes available
-#                            color = col, 
-#                            popup = str(emplacement.find_name(float(station_id))) + '\n : ' + str(numbikes) + ' bike(s) available',
-#                            fill = True, 
-#                            fill_color = col).add_to(m)
-#    m.save('map.html')      #save map as html interactive page
+#%%
+    
+def bikes_now():
+   # Draws a map of the stations with circle markers whom size depends on the number of bikes available right now
+    val = station.request(nrows=-1, sortby = 'duedate')
+    m = folium.Map(location = [48.864716, 2.349014], zoom_start=15)
+    for dico2 in val:
+        numbikes = dico2['fields']['nbbike']
+        if numbikes == 0 :      # the color of the marker shows how empty the station is
+            col = '#ff0000'
+        elif numbikes <= 10 :
+            col = '#ffa500'
+        else :
+            col = '#32cd32'
+        folium.CircleMarker(location = dico2['fields']['geo'], 
+                            radius = 5 + 2*numbikes, #radisu proportional to the number of bikes available
+                            color = col, 
+                            popup = dico2['fields']['station_name'] + '\n : ' + str(numbikes) + ' bike(s) available',
+                            fill = True, 
+                            fill_color = col).add_to(m)
+    m.save('map.html')      #save map as html interactive page
 
 #%% EXECUTION
 
 hours, minutes = 6, 15
 bikes_anytime(hours,minutes)
 
-    
-    
-    
-    
-    
+#%%
+
+def Moyenne_anytime(long_min, long_max, latt_min, latt_max, hours, minutes):
+    with open('datas.json') as f:
+        datas = json.load(f)
+    n = 0
+    nb_total = 0
+    for station_id in idvsgps.keys():
+        if (idvsgps[station_id][0]<= long_max and idvsgps[station_id][0]>= long_min):
+            if (idvsgps[station_id][1]<= latt_max and idvsgps[station_id][1]>= latt_min):
+               nb_total += datas[str(station_id)][timeconvert(hours,minutes)]
+               n += 1
+    return nb_total/n
+#%%
+            
+def Moyenne_totale(long_min, long_max, latt_min, latt_max):
+    liste_moyennes = []
+    for i in range(20):
+        for j in range(60):
+            liste_moyennes.append(Moyenne_anytime(long_min, long_max, latt_min, latt_max, i, j))
+    return liste_moyennes
+
+# les 11 stations à coté de Sorbonne université :
+a = 48.842868
+b = 48.851140
+c = 2.347492
+d = 2.361251
+
+temps = [k for k in range(1200)]
+f = plt.figure()   
+p = plt.plot(temps, Moyenne_totale(a, b, c, d))   
+plt.savefig('courbe.png')
     
     
