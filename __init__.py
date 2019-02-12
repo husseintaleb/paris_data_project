@@ -79,15 +79,15 @@ SLEEP_TIME = 60 # les requetes sont effectuees toutes les 60 secondes
 
 times = []     #liste vide qui va contenir les temps
 
-base = station.request(nrows=-1,sortby='station_id') #on fait une premiere requete pour acceder a tous les stations_id
+base = station.request(nrows=-1, sortby = 'duedate') #on fait une premiere requete pour acceder a tous les stations_id
 data = {} 
 for dico in base :
-    station_id = dico['fields']['station_id']
+    station_id = dico['fields']['station_code']
     data[str(station_id)]=[]            #on cree un dictionnaire dont les cles sont les station_id et les valeurs sont des listes vides
 
 for i in range(1440):
     try:
-        val = station.request(nrows=-1,sortby='station_id') #on effectue une requete regulierement dans le temps
+        val = station.request(nrows=-1, sortby = 'duedate') #on effectue une requete regulierement dans le temps
     except BaseException as e:
         print(e)
         continue
@@ -97,7 +97,7 @@ for i in range(1440):
     
     try:
         for dicobis in val :    #on remplit les listes du dictionnaire data avec les numbikes available a l'instant t 
-            data[str(dicobis['fields']['station_id'])].append(dicobis['fields']['numbikesavailable'])
+            data[str(dicobis['fields']['station_code'])].append(dicobis['fields']['nbbike'])
     
         with open('datas.json', 'w') as f:
             json.dump(data,f,indent=4)
@@ -125,18 +125,18 @@ def timeconvert(hours,minutes) :
     index = minutes + hours*60
     return index
     
-def bikesnow(hours,minutes) :
+def bikes_anytime(hours,minutes) :
     '''
-    draws a map of the stations with circle markers whom size depends on the number of bikes available
+    draws a map of the stations with circle markers whom size depends on the number of bikes available at a given time
     '''
-    m = folium.Map(location = [48.864716, 2.349014], zoom_start=13)
+    m = folium.Map(location = [48.864716, 2.349014], zoom_start=15)
     with open('datas.json') as f:
         datas = json.load(f)
     for station_id in idvsgps.keys():
         numbikes = datas[str(station_id)][timeconvert(hours,minutes)]
         if numbikes == 0 :      # the color of the marker shows how empty the station is
             col = '#ff0000'
-        elif numbikes <= 5 :
+        elif numbikes <= 10 :
             col = '#ffa500'
         else :
             col = '#32cd32'
@@ -148,10 +148,32 @@ def bikesnow(hours,minutes) :
                             fill_color = col).add_to(m)
     m.save('map.html')      #save map as html interactive page
 
+#def bikes_now():
+#     '''
+#    draws a map of the stations with circle markers whom size depends on the number of bikes available right now
+#    '''
+#    m = folium.Map(location = [48.864716, 2.349014], zoom_start=15)
+#    val = station.request(nrows=-1, sortby = 'duedate')
+#    for dico2 in val:
+#        numbikes = dico2['fields']['nbbike']
+#        if numbikes == 0 :      # the color of the marker shows how empty the station is
+#            col = '#ff0000'
+#        elif numbikes <= 10 :
+#            col = '#ffa500'
+#        else :
+#            col = '#32cd32'
+#        folium.CircleMarker(location = dico2['fields']['geo'], 
+#                            radius = 5 + 2*numbikes, #radisu proportional to the number of bikes available
+#                            color = col, 
+#                            popup = str(emplacement.find_name(float(station_id))) + '\n : ' + str(numbikes) + ' bike(s) available',
+#                            fill = True, 
+#                            fill_color = col).add_to(m)
+#    m.save('map.html')      #save map as html interactive page
+
 #%% EXECUTION
 
 hours, minutes = 6, 15
-bikesnow(hours,minutes)
+bikes_anytime(hours,minutes)
 
     
     
